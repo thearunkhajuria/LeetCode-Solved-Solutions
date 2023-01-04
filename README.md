@@ -1,1 +1,1 @@
-# LeetcCode-Solved-Solutions
+# LeetCode and GFG Solved Solutions
