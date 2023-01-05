@@ -27,8 +27,7 @@ class Solution {
         for(int i = 1 ; i < N ; i++){
             runSum[i] = runSum[i-1] + arr[i];
         }
-        
-      return runSum; 
+        return runSum; 
       */
     }
 
