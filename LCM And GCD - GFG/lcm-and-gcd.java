@@ -27,24 +27,24 @@ class GFG {
 class Solution {
     static Long[] lcmAndGcd(Long A , Long B) {
         // code here
-       long gcd =  gcd(A,B);
-        long lcm = lcm(A,B);
+        
+        long gcd =  gcd(A,B); // calling gcd function
+        long lcm = (A * B) / gcd(A,B);
+        
+        // Long type array for storing lcm and gcd 
         Long[] ans = {lcm , gcd};
         return ans;
-        
-        
     }
+    
+    // function for finding gcd of two numbers
     static long gcd (long a , long b){
+        
         if(a == 0){
             return b;
         }
-        if(b== 0){
-            return a;
-        }
-        return gcd(b % a , a);
+     
+        return gcd(b % a , a); //recursive call
     }
-    static long lcm(long a , long b){
-        return (a*b)/gcd(a,b);
-    }
+   
     
 };
